@@ -58,6 +58,38 @@ Petr Ankudinov, 2023
 
 ---
 
+# $ whoami
+
+<style scoped>section {font-size: 18px;}</style>
+
+<!-- Add footer starting from this slide -->
+<!--
+footer: '![h:20](https://www.arista.com/assets/images/logo/Arista_Logo.png)'
+-->
+
+- Petr Ankudinov [github.com/ankudinov](https://github.com/ankudinov)
+
+  - Advanced Services Engineer at Arista Networks
+  - Over 20 years of experience in IT with a bit of everything
+  - ACE: L5, CCIE 37521
+  - Passionate DC and network automation engineer
+  - Daily (and nightly) user of Ansible, VSCode and more
+
+- Patrick Mathy
+  
+  - Arista Systems Engineering at Arista Networks
+  - Networking around since 2016
+  - ACE: L5, CCIE 57751
+  - R&S, DC, Python, Ansible, Terraform, DevNet
+
+
+![bg right vertical w:200](img/pa-photo.jpg)
+![bg right w:200](img/patrick-photo.jpg)
+
+
+
+---
+
 # Credits and References
 
 <style scoped>section {font-size: 22px;}</style>
@@ -80,12 +112,6 @@ This repository is based on many awesome open source repositories and some free/
 - And many more...
 
 All photos are taken from [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/). Excellent free stock photos resources. It's not possible to reference every author individually, but their work is highly appreciated.
-
----
-
-# Building Blocks
-
-![](img/building-blocks.png)
 
 ---
 
