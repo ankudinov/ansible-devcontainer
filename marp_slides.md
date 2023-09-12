@@ -93,7 +93,11 @@ footer: '![h:20](https://www.arista.com/assets/images/logo/Arista_Logo.png)'
 
 ![bg right](img/pexels-suzy-hazelwood-1226398.jpg)
 
-- What is Ansible AVD?
+- Ansible AVD collection overview
+- Common challenges when building Ansible environment for network automation
+- Why devcontainers?
+- Pre-building a devcontainer with [arista.avd](https://avd.arista.com/), docker-in-docker and Containerlab using Github devcontainers/ci@v0.3 action.
+- How to run the container on any machine (with docker run or as devcontainer) or Github Codespaces
 
 ---
 
