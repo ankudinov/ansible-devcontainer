@@ -14,7 +14,7 @@ math: mathjax
 # #abbaab, #ffffff
 style: |
     :root {
-      background: linear-gradient(to right, #abbaab, #ffffff);
+      background: linear-gradient(to left, #abbaab, #ffffff);
     }
     img[alt~="custom"] {
       float: right;
@@ -34,7 +34,7 @@ style: |
       background-color: transparent;
     }
     pre {
-        background: linear-gradient(to bottom, #abbaab, #ffffff);
+        background: linear-gradient(to top, #abbaab, #ffffff);
         background-color: transparent;
     }
 ---
