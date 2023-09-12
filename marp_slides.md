@@ -160,3 +160,21 @@ All photos are taken from [Pexels](https://www.pexels.com/) and [Unsplash](https
     > The error handling and input validation is a very significant part of the `ansible.avd` collection.
 
 - Containers help to solve the issues above. But bring new challenges and not always easy to build and use.
+
+---
+
+# What It Takes to Build a Good Container?
+
+<style scoped>section {font-size: 18px;}</style>
+
+![bg right fit drop-shadow:0,5px,10px,rgba(0,0,0,.4)](img/docker-run.png)
+
+- Craft a Dockerfile with some essentials.
+- Add a non-root user, as root breaks permissions, breaks Ansible and ruins your work-life balance 😎.
+- Match user ID inside and outside of the container. Some operating systems like RHEL and the family are very strict about it. This is not a trivial task.
+- Create an entrypoint.
+- Take care of transferring Git credentials, keys, etc. into the container (if it's interactive).
+- Think about security and maintaining the container repository.
+- ... and it has to be multi-platform: amd64 and arm64 as a minimum.
+
+And now convince someone to run it. :ninja: ➡️
