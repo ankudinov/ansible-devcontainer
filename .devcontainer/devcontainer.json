@@ -42,8 +42,9 @@
                 "streetsidesoftware.code-spell-checker",
                 // errors and highlighters
                 "mechatroner.rainbow-csv",
-                // excalidraw
+                // excalidraw and drawio
                 "pomdtr.excalidraw-editor",
+                "hediet.vscode-drawio",
                 // markdown
                 "yzhang.markdown-all-in-one",
                 "bierner.markdown-checkbox",
