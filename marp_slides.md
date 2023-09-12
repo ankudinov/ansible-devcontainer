@@ -39,9 +39,7 @@ style: |
     }
 ---
 
-# Demo
-
-## ACL with AVD
+# Ansible in a Devcontainer
 
 <!-- Do not add page number on this slide -->
 <!--
@@ -49,9 +47,11 @@ _paginate: false
 -->
 
 ```text
-How to Generate ACL Config Using AVD
+Entire arista.avd ecosystem in a sealed bottle
 
-Petr Ankudinov, 2023
+Petr Ankudinov
+Patrick Mathy
+                                          2023
 ```
 
 ![bg right fit](img/avd-logo.webp)
@@ -82,11 +82,18 @@ footer: '![h:20](https://www.arista.com/assets/images/logo/Arista_Logo.png)'
   - ACE: L5, CCIE 57751
   - R&S, DC, Python, Ansible, Terraform, DevNet
 
-
 ![bg right vertical w:200](img/pa-photo.jpg)
 ![bg right w:200](img/patrick-photo.jpg)
 
+---
 
+# Agenda
+
+<style scoped>section {font-size: 22px;}</style>
+
+![bg right](img/pexels-suzy-hazelwood-1226398.jpg)
+
+- What is Ansible AVD?
 
 ---
 
