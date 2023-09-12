@@ -141,3 +141,22 @@ All photos are taken from [Pexels](https://www.pexels.com/) and [Unsplash](https
   - Generate low level device specific variables (aka structured configs)
   - Parse templates, build plain text configs
   - Deliver configs to network devices using Ansible `arista.eos.eos_config`
+
+---
+
+# Running Ansible in a Container
+
+<style scoped>section {font-size: 20px;}</style>
+
+![bg right w:400](img/01-symbol_blue-docker-logo.png)
+
+- The old story of "it works on my machine":
+  - Different versions of Python and Ansible
+  - Dependencies
+  - Interpreter path issues
+  - The famous very-very-very-**VERY** verbose only to find out that:
+    `The error appears to be, but may be elsewhere` (c) Ansible 😅
+  
+    > The error handling and input validation is a very significant part of the `ansible.avd` collection.
+
+- Containers help to solve the issues above. But bring new challenges and not always easy to build and use.
