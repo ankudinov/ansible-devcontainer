@@ -14,7 +14,7 @@
     // "onCreateCommand": "sudo apt-get update; sudo apt-get install -y chromium",
     "onCreateCommand": "docker import /home/vscode/tmp/ceos-lab-temp ceos-lab:latest; rm -rf /home/vscode/tmp/; sudo apt-get update; sudo apt-get install -y chromium",
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2.2.0": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2.5.0": {
             "version": "latest"
         },
         // add sshd to support gh cli codespace cp
