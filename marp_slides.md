@@ -178,3 +178,15 @@ All photos are taken from [Pexels](https://www.pexels.com/) and [Unsplash](https
 - ... and it has to be multi-platform: amd64 and arm64 as a minimum.
 
 And now convince someone to run it. :ninja: ➡️
+
+---
+
+# Dev Container - A Better Container
+
+<style scoped>section {font-size: 22px;}</style>
+
+- [A Dev Container](https://containers.dev) is a container used as a fully featured development environment. Dev containers can be run locally or remotely, in a private or public cloud, in a variety of [supporting tools and editors](https://containers.dev/supporting).
+- [Dev Container Specification](https://github.com/devcontainers/spec) was started by Microsoft and has strong community support.
+- Dev Containers are powered by:
+  - [Templates](https://containers.dev/templates)
+  - [Features](https://containers.dev/features)
