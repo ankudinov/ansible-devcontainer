@@ -3,6 +3,7 @@ concurrency: marp-to-pages
 on:
   push:
     branches: [ master ]
+    paths: [ marp_slides.md ]
 permissions:
   contents: write
 jobs:
