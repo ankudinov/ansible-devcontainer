@@ -148,7 +148,7 @@ All photos are taken from [Pexels](https://www.pexels.com/) and [Unsplash](https
 
 <style scoped>section {font-size: 20px;}</style>
 
-![bg right w:400](img/01-symbol_blue-docker-logo.png)
+![bg right w:400](img/05-symbol_off-black-docker-logo.png)
 
 - The old story of "it works on my machine":
   - Different versions of Python and Ansible
