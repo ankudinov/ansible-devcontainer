@@ -183,7 +183,7 @@ And now convince someone to run it. :ninja: ➡️
 
 # Dev Container - A Better Container
 
-<style scoped>section {font-size: 22px;}</style>
+<style scoped>section {font-size: 20px;}</style>
 
 ![bg right fit](drawio/devcontainer-definition.png)
 
@@ -192,3 +192,19 @@ And now convince someone to run it. :ninja: ➡️
 - Dev Containers are powered by:
   - [Prebuilt images](https://github.com/devcontainers/images)
   - [Features](https://containers.dev/features)
+
+> **Dev Container features** enable complex functionality at the cost a few lines added to `devcontainer.json`
+
+---
+
+# Prebuilt Dev Containers
+
+<style scoped>section {font-size: 20px;}</style>
+
+![bg right fit](img/prebuilt-action.png)
+
+- Building a dev container locally may not be optimal and increases the risk of changing dependencies.
+- You can pre-built your own dev container and upload to any container registry.
+- One of the best combos:
+  - [Github Container Registry](https://github.blog/2020-09-01-introducing-github-container-registry/)
+  - [devcontainers/ci@v0.3](https://github.com/devcontainers/ci) action

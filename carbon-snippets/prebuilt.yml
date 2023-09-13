@@ -1,0 +1,16 @@
+jobs:
+  build_image:
+    runs-on: ubuntu-22.04
+    steps:
+    
+    # more steps here
+    # < ... >
+
+    - name: Pre-build dev container image 🔨
+      uses: devcontainers/ci@v0.3
+      with:
+        subFolder: avd-containers/${{ inputs.container_name }}
+        imageName: ghcr.io/ankudinov/avd-devcontainer/${{ inputs.container_name }}
+        imageTag: ${{ steps.build-tags.outputs.image_tags }}
+        platform: ${{ inputs.platform }}
+        push: always
