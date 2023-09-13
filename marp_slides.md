@@ -221,7 +221,7 @@ And now convince someone to run it. :ninja: ➡️
 
 <style scoped>section {font-size: 20px;}</style>
 
-![bg right](tldraw/demo-workflow.png)
+![bg right w:500](tldraw/demo-workflow.png)
 
 - The demo is showing a single use case of building a functional EVPN lab in a dev container with Ansible AVD
 - The use cases are endless
