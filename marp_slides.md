@@ -99,6 +99,12 @@ footer: '![h:20](https://www.arista.com/assets/images/logo/Arista_Logo.png)'
 - Pre-building a devcontainer with [arista.avd](https://avd.arista.com/), docker-in-docker and Containerlab using Github [devcontainers/ci@v0.3](https://github.com/devcontainers/ci) action.
 - How to run the container on any machine (with docker run or as devcontainer) or Github Codespaces
 
+> ```text
+> Tech level: intermediate
+>   know some Ansible, VSCode,
+>   containers, Github, etc.
+> ```
+
 ---
 
 # Credits and References
@@ -208,3 +214,23 @@ And now convince someone to run it. :ninja: ➡️
 - One of the best combos:
   - [Github Container Registry](https://github.blog/2020-09-01-introducing-github-container-registry/)
   - [devcontainers/ci@v0.3](https://github.com/devcontainers/ci) action
+
+---
+
+# The Demo
+
+<style scoped>section {font-size: 20px;}</style>
+
+![bg right](tldraw/demo-workflow.png)
+
+- The demo is showing a single use case of building a functional EVPN lab in a dev container with Ansible AVD
+- The use cases are endless
+- Dev containers are not intended to be used in prod theoretically, but in certain cases this can be very acceptable
+
+---
+
+<style scoped>section {font-size: 60px;}</style>
+
+![bg left opacity:80%](img/pexels-ann-h-7186206.jpg)
+
+# Q&A
