@@ -8,6 +8,7 @@ on:
     - img/*
     - excalidraw/*
     - drawio/*
+    - tldraw/*
 permissions:
   contents: write
 jobs:
