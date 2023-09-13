@@ -190,5 +190,5 @@ And now convince someone to run it. :ninja: ➡️
 - [A Dev Container](https://containers.dev) is a container used as a fully featured development environment. Dev containers can be run locally or remotely, in a private or public cloud, in a variety of [supporting tools and editors](https://containers.dev/supporting).
 - [Dev Container Specification](https://github.com/devcontainers/spec) was started by Microsoft and has strong community support.
 - Dev Containers are powered by:
-  - [Templates](https://containers.dev/templates)
+  - [Prebuilt images](https://github.com/devcontainers/images)
   - [Features](https://containers.dev/features)
