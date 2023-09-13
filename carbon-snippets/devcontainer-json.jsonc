@@ -1,0 +1,30 @@
+{
+	"name": "ansible-avd-devcontainer",
+	"build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "_AVD_VERSION": "4.1.0"
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2.5.0": {
+            "version": "latest"
+        },
+        // add sshd to support gh cli codespace cp
+        "ghcr.io/devcontainers/features/sshd:1": {
+            "version": "latest"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // git essentials
+                "piotrpalarz.vscode-gitignore-generator",
+                "mhutchie.git-graph",
+                "donjayamanne.githistory",
+                // spell checker
+                "streetsidesoftware.code-spell-checker"
+            ]
+        }
+    }
+}
