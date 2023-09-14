@@ -9,5 +9,12 @@ name_servers:
 
 dns_domain: avd.lab
 
-eos_cli: |-
-  username arista privilege 15 role network-admin secret {{ ansible_password }}
+# eos_cli: |-
+#   username arista privilege 15 role network-admin secret {{ ansible_password }}
+
+# Local Users
+local_users:
+  - name: arista
+    privilege: 15
+    role: network-admin
+    sha512_password: "{{ ansible_password | password_hash(salt='workshop') }}"
