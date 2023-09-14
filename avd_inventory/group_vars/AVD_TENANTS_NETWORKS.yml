@@ -1,3 +1,4 @@
+---
 svi_profiles:
   - profile: GENERIC
     mtu: 1560

@@ -9,9 +9,9 @@ servers:
   - name: host1
     rack: pod1
     adapters:
-      - endpoint_ports: [Eth1, Eth2, Eth3, Eth4]
-        switch_ports: [Ethernet4, Ethernet5, Ethernet4, Ethernet5]
-        switches: [leaf1,leaf1, leaf2, leaf2]
+      - endpoint_ports: [Eth1, Eth2]
+        switch_ports: [Ethernet4, Ethernet4]
+        switches: [leaf1, leaf2]
         profile: TENANT_A
         port_channel:
           description: PortChannel
