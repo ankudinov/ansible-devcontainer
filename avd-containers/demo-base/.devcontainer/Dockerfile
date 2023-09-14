@@ -18,7 +18,9 @@ RUN apt-get update \
     htop \
     && rm -rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
-    && apt-get clean
+    && apt-get clean \
+    # add chromium for marp slides
+    && sudo apt-get install -y chromium
 
 # switch non-root user otherwise Ansible will be installed as root
 USER ${USERNAME}
