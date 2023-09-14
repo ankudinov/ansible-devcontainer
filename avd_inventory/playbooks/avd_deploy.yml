@@ -1,6 +1,6 @@
 ---
 - name: Deploy Configs
-  hosts: ATD_FABRIC
+  hosts: AVD_FABRIC
   gather_facts: false
   tasks:
 
