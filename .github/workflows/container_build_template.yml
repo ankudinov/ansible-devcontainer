@@ -86,10 +86,10 @@ jobs:
           ANSIBLE_CORE_VERSION: ${{ inputs.ansible_core_version }}
           USERNAME: ${{ inputs.username }}
           CLAB_VERSION: ${{ inputs.clab_version }}
-          GIT_REPO_NAME: ${{ github.repository }}
+          GIT_REPO_NAME: ${{ github.event.repository.name }}
         with:
           subFolder: avd-containers/${{ inputs.container_name }}
-          imageName: ghcr.io/${{ github.repository_owner }}/${{ github.repository }}/${{ inputs.container_name }}
+          imageName: ghcr.io/${{ github.repository }}/${{ inputs.container_name }}
           imageTag: ${{ inputs.container_tags }}
           platform: ${{ inputs.platform }}
           push: always
