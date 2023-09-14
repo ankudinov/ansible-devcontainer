@@ -1,0 +1,47 @@
+---
+fabric_name: AVD_FABRIC
+
+# Spine Switches
+spine:
+  defaults:
+    platform: vEOS-lab
+    bgp_as: 65001
+    loopback_ipv4_pool: 192.0.255.0/24
+  nodes:
+    - name: spine1
+      id: 1
+      mgmt_ip: 192.168.0.10/24
+    - name: spine2
+      id: 2
+      mgmt_ip: 192.168.0.11/24
+
+l3leaf:
+  defaults:
+    platform: vEOS-lab
+    loopback_ipv4_pool: 192.0.255.0/24
+    loopback_ipv6_pool: 2001:db8:c01d:c01a::/64
+    loopback_ipv4_offset: 2
+    vtep_loopback_ipv4_pool: 192.0.254.0/24
+    uplink_interfaces: [Ethernet2, Ethernet3]
+    uplink_switches: [spine1, spine2]
+    uplink_ipv4_pool: 172.30.255.0/24
+    mlag_interfaces: [Ethernet1, Ethernet6]
+    mlag_peer_ipv4_pool: 10.255.252.0/24
+    mlag_peer_l3_ipv4_pool: 10.255.251.0/24
+    virtual_router_mac_address: 00:1c:73:00:dc:01
+    spanning_tree_mode: mstp
+    spanning_tree_priority: 16384
+  node_groups:
+    - group: pod1
+      bgp_as: 65101
+      nodes:
+        - name: leaf1
+          id: 1
+          mgmt_ip: 192.168.0.12/24
+          uplink_switch_interfaces: [Ethernet2, Ethernet2]
+        - name: leaf2
+          id: 2
+          mgmt_ip: 192.168.0.13/24
+          uplink_switch_interfaces: [Ethernet3, Ethernet3]
+
+p2p_uplinks_mtu: 9214
