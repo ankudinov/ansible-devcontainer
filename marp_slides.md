@@ -91,7 +91,7 @@ footer: '![h:20](https://www.arista.com/assets/images/logo/Arista_Logo.png)'
 
 <style scoped>section {font-size: 22px;}</style>
 
-![bg right](img/pexels-suzy-hazelwood-1226398.jpg)
+![bg right ](img/pexels-suzy-hazelwood-1226398.jpg)
 
 - Ansible AVD collection overview
 - Common challenges when building Ansible environment for network automation
@@ -173,7 +173,7 @@ All photos are taken from [Pexels](https://www.pexels.com/) and [Unsplash](https
 
 <style scoped>section {font-size: 18px;}</style>
 
-![bg right fit drop-shadow:0,5px,10px,rgba(0,0,0,.4)](img/docker-run.png)
+![bg right fit drop-shadow:0,5px,10px,rgba(0,0,0,.4) opacity:85%](img/docker-run-light.png)
 
 - Craft a Dockerfile with some essentials.
 - Add a non-root user, as root breaks permissions, breaks Ansible and ruins your work-life balance 😎.
@@ -191,7 +191,7 @@ And now convince someone to run it. :ninja: ➡️
 
 <style scoped>section {font-size: 20px;}</style>
 
-![bg right fit](drawio/devcontainer-definition.png)
+![bg right fit opacity:95%](drawio/devcontainer-definition.png)
 
 - [A Dev Container](https://containers.dev) is a container used as a fully featured development environment. Dev containers can be run locally or remotely, in a private or public cloud, in a variety of [supporting tools and editors](https://containers.dev/supporting).
 - [Dev Container Specification](https://github.com/devcontainers/spec) was started by Microsoft and has strong community support.
@@ -207,7 +207,7 @@ And now convince someone to run it. :ninja: ➡️
 
 <style scoped>section {font-size: 20px;}</style>
 
-![bg right fit](img/prebuilt-action.png)
+![bg right fit opacity:85%](img/prebuilt-action-light.png)
 
 - Building a dev container locally may not be optimal and increases the risk of changing dependencies.
 - You can pre-built your own dev container and upload to any container registry.
@@ -221,7 +221,7 @@ And now convince someone to run it. :ninja: ➡️
 
 <style scoped>section {font-size: 20px;}</style>
 
-![bg right w:500](tldraw/demo-workflow.png)
+![bg right w:500 opacity:80%](tldraw/demo-workflow.png)
 
 - The demo is showing a single use case of building a functional EVPN lab in a dev container with Ansible AVD
 - The use cases are endless
