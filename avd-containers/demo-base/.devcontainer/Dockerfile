@@ -16,11 +16,11 @@ RUN apt-get update \
     curl \
     iputils-ping \
     htop \
+    # add chromium for marp slides
+    chromium \
     && rm -rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
-    && apt-get clean \
-    # add chromium for marp slides
-    && sudo apt-get install -y chromium
+    && apt-get clean
 
 # switch non-root user otherwise Ansible will be installed as root
 USER ${USERNAME}
