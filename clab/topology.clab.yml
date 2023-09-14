@@ -21,11 +21,10 @@ topology:
       mgmt-ipv4: 192.168.0.12
     leaf2:
       mgmt-ipv4: 192.168.0.13
+    host:
+      mgmt-ipv4: 192.168.0.100
 
   links:
-  # spine to spine
-  - endpoints: ["spine1:eth1", "spine2:eth1"]
-  - endpoints: ["spine1:eth6", "spine2:eth6"]
   # leaf to spine
   - endpoints: ["leaf1:eth2", "spine1:eth2"]
   - endpoints: ["leaf1:eth3", "spine2:eth2"]
@@ -34,3 +33,6 @@ topology:
   # leaf to leaf
   - endpoints: ["leaf1:eth1", "leaf2:eth1"]
   - endpoints: ["leaf1:eth6", "leaf2:eth6"]
+  # host to leaf
+  - endpoints: ["host:eth1", "leaf1:eth4"]
+  - endpoints: ["host:eth2", "leaf2:eth4"]
