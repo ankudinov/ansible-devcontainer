@@ -1,0 +1,95 @@
+# this workflow file is the template 
+# that will be triggered by a parent workflow matrix
+
+name: container-build-template
+
+env:
+  # BUILDX_NO_DEFAULT_ATTESTATIONS must be set to build only arm64 and amd64 images
+  # the devcontainers/ci@v0.3 build will fail if this env variable is not set
+  BUILDX_NO_DEFAULT_ATTESTATIONS: 1
+
+on:
+  workflow_call:
+    inputs:
+      # container name, e.g. base, dev, etc.
+      container_name:
+        required: true
+        type: string
+      # container tags, e.g. "latest,python3.11" or "latest,python3.11-avd4.1.0"
+      container_tags:
+        required: true
+        type: string
+      # avd_version, e.g. 4.1.0
+      avd_version:
+        required: true
+        type: string
+      ansible_core_version:
+        required: true
+        type: string
+      clab_version:
+        required: true
+        type: string
+      # platform, e.g. linux/amd64, linux/arm64/v8
+      # default is just fine if there is no intention to release a special build
+      platform:
+        required: false
+        type: string
+        default: linux/arm64/v8,linux/amd64
+      # from_image, e.g. python, alpine, etc.
+      from_image:
+        required: false
+        type: string
+        default: mcr.microsoft.com/devcontainers/python
+      # from_variant, e.g. 3.11-slim-bullseye
+      from_variant:
+        required: false
+        type: string
+        default: 0-3.9-bullseye
+      username:
+        required: false
+        type: string
+        default: vscode
+
+jobs:
+  build_image:
+    runs-on: ubuntu-22.04
+
+    steps:
+
+      - name: Starting container build
+        run: echo "Starting container build. Be patient. 🐢"
+
+      - name: Checkout code ✅
+        uses: actions/checkout@v3
+      
+      - name: setup QEMU for multi-arch builds 🏗️
+        uses: docker/setup-qemu-action@v2
+        with:
+          platforms: ${{ inputs.platform }}
+
+      - name: setup Docker buildX for multi-arch builds 🏗️
+        uses: docker/setup-buildx-action@v2
+
+      - name: Login to Docker Hub 🗝️
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pre-build dev container image 🔨
+        uses: devcontainers/ci@v0.3
+        env:
+          FROM_IMAGE: ${{ inputs.from_image }}
+          FROM_VARIANT: ${{ inputs.from_variant }}
+          AVD_VERSION: ${{ inputs.avd_version }}
+          ANSIBLE_CORE_VERSION: ${{ inputs.ansible_core_version }}
+          USERNAME: ${{ inputs.username }}
+          CLAB_VERSION: ${{ inputs.clab_version }}
+          GIT_REPO_NAME: ${{ github.repository }}
+        with:
+          subFolder: avd-containers/${{ inputs.container_name }}
+          imageName: ghcr.io/${{ github.repository_owner }}/${{ github.repository }}/${{ inputs.container_name }}
+          imageTag: ${{ inputs.container_tags }}
+          platform: ${{ inputs.platform }}
+          push: always

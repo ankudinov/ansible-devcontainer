@@ -1,0 +1,38 @@
+---
+name: build-all-containers
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+    - avd-containers/**
+    - .github/workflows/build_containers.yml
+    - .github/workflows/container_build_template.yml
+
+jobs:
+
+  build_demo_base:
+
+    uses: ./.github/workflows/container_build_template.yml
+
+    strategy:
+      matrix:
+        container_name: [demo-base]
+        avd_version: ["4.1.0", "4.2.0", "4.3.0"]
+        ansible_core_version: ["ansible-core>=2.13.1,<2.14.0"]
+        clab_version: ["0.44.3"]
+        include:
+          - avd_version: "4.1.0"
+            container_tags: "4.1.0"
+          - avd_version: "4.2.0"
+            container_tags: "4.2.0"
+          - avd_version: "4.3.0"
+            container_tags: "latest,4.3.0"
+
+    with:
+      container_name: ${{ matrix.container_name }}
+      container_tags: ${{ matrix.container_tags }}
+      avd_version: ${{ matrix.avd_version }}
+      ansible_core_version: ${{ matrix.ansible_core_version }}
+      clab_version: ${{ matrix.clab_version }}
