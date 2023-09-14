@@ -4,7 +4,7 @@ fabric_name: AVD_FABRIC
 # Spine Switches
 spine:
   defaults:
-    platform: vEOS-lab
+    platform: cEOS-lab
     bgp_as: 65001
     loopback_ipv4_pool: 192.0.255.0/24
   nodes:
@@ -17,7 +17,7 @@ spine:
 
 l3leaf:
   defaults:
-    platform: vEOS-lab
+    platform: cEOS-lab
     loopback_ipv4_pool: 192.0.255.0/24
     loopback_ipv6_pool: 2001:db8:c01d:c01a::/64
     loopback_ipv4_offset: 2
