@@ -1,4 +1,4 @@
-FROM ghcr.io/ankudinov/ansible-devcontainer/demo-base:4.1.0
+FROM ghcr.io/ankudinov/ansible-devcontainer/demo-base:latest
 
 ARG _ARTOKEN
 ARG _AR_FILE_PATH
