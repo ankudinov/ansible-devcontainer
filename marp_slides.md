@@ -51,7 +51,7 @@ Entire arista.avd ecosystem in a sealed bottle
 
 Petr Ankudinov
 Patrick Mathy
-                                          2023
+                                      Sep 2023
 ```
 
 ![bg right fit](img/avd-logo.webp)
