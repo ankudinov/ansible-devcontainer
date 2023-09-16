@@ -109,7 +109,7 @@ footer: '![h:20](https://www.arista.com/assets/images/logo/Arista_Logo.png)'
 
 # Credits and References
 
-<style scoped>section {font-size: 14px;}</style>
+<style scoped>section {font-size: 12px;}</style>
 
 <!-- Add footer starting from this slide -->
 <!--
@@ -211,7 +211,7 @@ And now convince someone to run it. :ninja: ➡️
 
 <style scoped>section {font-size: 20px;}</style>
 
-![bg right fit opacity:85%](img/prebuilt-action-light.png)
+![bg right fit drop-shadow:0,5px,10px,rgba(0,0,0,.4) opacity:85%](img/prebuilt-action-light.png)
 
 - Building a dev container locally may not be optimal and increases the risk of changing dependencies.
 - You can pre-built your own dev container and upload to any container registry.
@@ -225,7 +225,7 @@ And now convince someone to run it. :ninja: ➡️
 
 <style scoped>section {font-size: 20px;}</style>
 
-![bg right w:500 opacity:80%](tldraw/demo-workflow.png)
+![bg right w:500 drop-shadow:0,5px,10px,rgba(0,0,0,.4) opacity:80%](tldraw/demo-workflow.png)
 
 - The demo is showing a single use case of building a functional EVPN lab in a dev container with Ansible AVD
 - The use cases are endless
