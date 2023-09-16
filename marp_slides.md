@@ -129,9 +129,10 @@ Tool | Purpose
 [Github Codespaces](https://github.com/features/codespaces) | run the demo container
 [Carbon](https://carbon.now.sh/) | code snippets
 [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/) | Excellent free stock photos resources. It's not possible to reference every author individually, but their work is highly appreciated.
+[excalidraw](https://github.com/excalidraw/excalidraw), [drawio](https://github.com/jgraph/drawio), [tldraw](https://github.com/tldraw/tldraw) | VSCode plugins to create drawings
 [Containerlab](https://containerlab.dev) | Orchestration tool for container based networking labs
 [Arista AVD Ansible Collection](https://avd.arista.com/4.3/index.html) | Ansible collection used to build EVPN network
-[Ansible](https://www.ansible.com) | Automation for everyone. Yes, we'll use it as well!
+[Ansible](https://www.ansible.com) | Automation for everyone. Yes, we'll use it as well! 😎
 
 ---
 
