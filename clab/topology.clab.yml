@@ -22,6 +22,7 @@ topology:
     leaf2:
       mgmt-ipv4: 192.168.0.13
     host:
+      startup-config: init-configs/host.cfg
       mgmt-ipv4: 192.168.0.100
 
   links:
