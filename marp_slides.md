@@ -109,7 +109,7 @@ footer: '![h:20](https://www.arista.com/assets/images/logo/Arista_Logo.png)'
 
 # Credits and References
 
-<style scoped>section {font-size: 22px;}</style>
+<style scoped>section {font-size: 14px;}</style>
 
 <!-- Add footer starting from this slide -->
 <!--
@@ -118,17 +118,20 @@ footer: '![h:20](https://www.arista.com/assets/images/logo/Arista_Logo.png)'
 
 This repository is based on many awesome open source repositories and some free/commercial Github features:
 
-- [VS Code](https://code.visualstudio.com/)
-- [DevContainers](https://code.visualstudio.com/docs/remote/containers)
-- [Marp](https://marp.app/)
-- [Excalidraw VS Code Plugin](https://github.com/excalidraw/excalidraw-vscode)
-- [Github Actions](https://github.com/features/actions)
-- [Github Pages](https://pages.github.com/)
-- [Github Codespaces](https://github.com/features/codespaces)
-- [Carbon](https://carbon.now.sh/)
-- And many more...
-
-All photos are taken from [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/). Excellent free stock photos resources. It's not possible to reference every author individually, but their work is highly appreciated.
+Tool | Purpose
+-----|------------
+[VS Code](https://code.visualstudio.com/) | create this repository code
+[DevContainers](https://code.visualstudio.com/docs/remote/containers) | our topic for today
+[Marpit](https://marp.app/) | Markdown slide deck framework
+[Github Actions](https://github.com/features/actions) | build slides and containers
+[Github Pages](https://pages.github.com/) | publish slides
+[Github Packages](https://github.com/features/packages) | publish containers
+[Github Codespaces](https://github.com/features/codespaces) | run the demo container
+[Carbon](https://carbon.now.sh/) | code snippets
+[Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/) | Excellent free stock photos resources. It's not possible to reference every author individually, but their work is highly appreciated.
+[Containerlab](https://containerlab.dev) | Orchestration tool for container based networking labs
+[Arista AVD Ansible Collection](https://avd.arista.com/4.3/index.html) | Ansible collection used to build EVPN network
+[Ansible](https://www.ansible.com) | Automation for everyone. Yes, we'll use it as well!
 
 ---
 
