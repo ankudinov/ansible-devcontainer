@@ -21,8 +21,8 @@ topology:
       mgmt-ipv4: 192.168.0.12
     leaf2:
       mgmt-ipv4: 192.168.0.13
-    host:
-      startup-config: init-configs/host.cfg
+    a_host:
+      startup-config: init-configs/a_host.cfg
       mgmt-ipv4: 192.168.0.100
 
   links:
@@ -35,5 +35,5 @@ topology:
   - endpoints: ["leaf1:eth1", "leaf2:eth1"]
   - endpoints: ["leaf1:eth6", "leaf2:eth6"]
   # host to leaf
-  - endpoints: ["host:eth1", "leaf1:eth4"]
-  - endpoints: ["host:eth2", "leaf2:eth4"]
+  - endpoints: ["a_host:eth1", "leaf1:eth4"]
+  - endpoints: ["a_host:eth2", "leaf2:eth4"]
