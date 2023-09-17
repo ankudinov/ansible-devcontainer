@@ -207,7 +207,7 @@ Tool | Purpose
 
 ![bg right fit opacity:95%](drawio/devcontainer-definition.png)
 
-- [A Dev Container](https://containers.dev) is a container used as a fully featured development environment. Dev containers can be run locally or remotely, in a private or public cloud, in a variety of [supporting tools and editors](https://containers.dev/supporting).
+- A [Dev Container](https://containers.dev) is a container used as a fully featured development environment. Dev containers can be run locally or remotely, in a private or public cloud, in a variety of [supporting tools and editors](https://containers.dev/supporting).
 - [Dev Container Specification](https://github.com/devcontainers/spec) was started by Microsoft and has strong community support.
 - Dev Containers are powered by:
   - [Prebuilt images](https://github.com/devcontainers/images)
