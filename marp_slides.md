@@ -260,19 +260,25 @@ Tool | Purpose
 
 # The Lab
 
-tbd
+<style scoped>section {font-size: 24px;}</style>
+
+![bg right fit](excalidraw/lab.png)
+
+- Everything is running in a single dev container
+- The dev container runs on [Github Codespaces](https://github.com/features/codespaces): fully configured dev environment in the cloud. TLDR: your VSCode any time anywhere in your browser.
+- The lab is running in a dev container using [Containerlab](https://containerlab.dev) thx to D-in-D (docker-in-docker) feature and orchestrated by pre-installed [arista.avd](https://avd.arista.com/) collection.
 
 ---
 
 # The Demo
 
-<style scoped>section {font-size: 20px;}</style>
+<style scoped>section {font-size: 24px;}</style>
 
 ![bg right w:500 drop-shadow:0,5px,10px,rgba(0,0,0,.4) opacity:80%](tldraw/demo-workflow.png)
 
-- The demo is showing a single use case of building a functional EVPN lab in a dev container with Ansible AVD
-- The use cases are endless
-- Dev containers are not intended to be used in prod theoretically, but in certain cases this can be very acceptable
+- Building a functional EVPN lab in a dev container with Ansible AVD
+
+> **Reminder:** we are focusing on a single network automation use case, but there are many other use cases for dev containers.
 
 ---
 
