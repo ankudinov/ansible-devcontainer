@@ -94,7 +94,7 @@ footer: '![h:20](https://www.arista.com/assets/images/logo/Arista_Logo.png)'
 ![bg right ](img/pexels-suzy-hazelwood-1226398.jpg)
 
 - Ansible AVD collection overview
-- Common challenges when building Ansible environment for network automation
+- Common challenges when building Ansible environment
 - Why devcontainers?
 - Pre-building a devcontainer with [arista.avd](https://avd.arista.com/), docker-in-docker and Containerlab using Github [devcontainers/ci@v0.3](https://github.com/devcontainers/ci) action.
 - How to run the container on any machine (with docker run or as devcontainer) or Github Codespaces
@@ -154,11 +154,12 @@ Tool | Purpose
 
 ---
 
-# Running Ansible in a Container
+# Challenges When Building Ansible Environment
 
 <style scoped>section {font-size: 20px;}</style>
 
-![bg right w:400 contrast:80% drop-shadow:0,5px,10px,rgba(0,0,0,.4)](img/01-primary-blue-docker-logo.png)
+![bg right vertical w:400 drop-shadow:0,5px,10px,rgba(0,0,0,.4)](img/pexels-tara-winstead-8386732-modified-stackoverflow.jpg)
+![bg right vertical w:400 contrast:80% drop-shadow:0,5px,10px,rgba(0,0,0,.4)](img/01-primary-blue-docker-logo.png)
 
 - The old story of "it works on my machine":
   - Different versions of Python and Ansible
@@ -169,25 +170,27 @@ Tool | Purpose
   
     > The error handling and input validation is a very significant part of the `ansible.avd` collection.
 
-- Containers help to solve the issues above. But bring new challenges and not always easy to build and use.
+- You can always cry for help and catch other people cries from the [StackOverflow](https://stackoverflow.com).
 
 ---
 
-# What It Takes to Build a Good Container?
+# Normal Containers and What It Takes to Build Them
 
 <style scoped>section {font-size: 18px;}</style>
 
 ![bg right fit drop-shadow:0,5px,10px,rgba(0,0,0,.4) opacity:85%](img/docker-run-light.png)
 
-- Craft a Dockerfile with some essentials.
-- Add a non-root user, as root breaks permissions, breaks Ansible and ruins your work-life balance 😎.
-- Match user ID inside and outside of the container. Some operating systems like RHEL and the family are very strict about it. This is not a trivial task.
-- Create an entrypoint.
-- Take care of transferring Git credentials, keys, etc. into the container (if it's interactive).
-- Think about security and maintaining the container repository.
-- ... and it has to be multi-platform: amd64 and arm64 as a minimum.
+- Containers can help. But bring new challenges and building a good container is a journey:
 
-And now convince someone to run it. :ninja: ➡️
+  - Craft a Dockerfile with some essentials.
+  - Add a non-root user, as root breaks permissions, breaks Ansible and ruins your work-life balance 😎.
+  - Match user ID inside and outside of the container. Some operating systems like RHEL and the family are very strict about it. This is not a trivial task.
+  - Create an entrypoint.
+  - Take care of transferring Git credentials, keys, etc. into the container (if it's interactive).
+  - Think about security and maintaining the container repository.
+  - ... and it has to be multi-platform: amd64 and arm64 as a minimum.
+
+- And now convince someone to run it. :ninja: ➡️
 
 ---
 
