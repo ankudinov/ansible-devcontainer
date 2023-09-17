@@ -99,11 +99,18 @@ footer: '![h:20](https://www.arista.com/assets/images/logo/Arista_Logo.png)'
 - Pre-building a devcontainer with [arista.avd](https://avd.arista.com/), docker-in-docker and Containerlab using Github [devcontainers/ci@v0.3](https://github.com/devcontainers/ci) action.
 - How to run the container on any machine (with docker run or as devcontainer) or Github Codespaces
 
-> ```text
-> Tech level: intermediate
->   know some Ansible, VSCode,
->   containers, Github, etc.
-> ```
+---
+
+# Highlights
+
+<style scoped>section {font-size: 22px;}</style>
+
+![bg right](img/pexels-pixabay-356043.jpg)
+
+- This session is focused on the network automation with Ansible AVD collection, but same principles can be applied to **any other Ansible collection**.
+- The focus is on the **development lifecycle**. The concept of using Dev Containers can be useful for some production use cases, but so is [Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible), etc. Your mileage may vary.
+- Required technical level is **intermediate**. You should know some Ansible, VSCode, containers, Github, etc.
+- There are not too many slides. The missing details are available in the [repository](https://github.com/ankudinov/ansible-devcontainer).
 
 ---
 
