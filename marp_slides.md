@@ -233,6 +233,18 @@ Tool | Purpose
 
 ---
 
+# How to Run a Dev Container
+
+tbd
+
+---
+
+# The Lab
+
+tbd
+
+---
+
 # The Demo
 
 <style scoped>section {font-size: 20px;}</style>
