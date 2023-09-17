@@ -241,7 +241,9 @@ Tool | Purpose
 
 # How to Run a Dev Container and The Benefits
 
-<style scoped>section {font-size: 20px;}</style>
+<style scoped>section {font-size: 17px;}</style>
+
+![bg right drop-shadow:0,5px,10px,rgba(0,0,0,.4) opacity:90%](drawio/devcontainer-bottle.png)
 
 - You can run dev containers anywhere:
   - any platform, any machine, any cloud.
