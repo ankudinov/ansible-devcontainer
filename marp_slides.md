@@ -235,12 +235,24 @@ Tool | Purpose
 - One of the best combos:
   - [Github Container Registry](https://github.blog/2020-09-01-introducing-github-container-registry/)
   - [devcontainers/ci@v0.3](https://github.com/devcontainers/ci) action
+- Always build multi-platform images! Single platform builds look rudimentary in 2023.
 
 ---
 
-# How to Run a Dev Container
+# How to Run a Dev Container and The Benefits
 
-tbd
+<style scoped>section {font-size: 20px;}</style>
+
+- You can run dev containers anywhere:
+  - any platform, any machine, any cloud.
+  - Use any [supporting tool and editor](https://containers.dev/supporting). The most popular way is certainly VSCode with Dev Container extension.
+  - You can also use pre-built dev containers with docker command line, but functionality can be limited.
+- Benefits:
+  - Stable and predictable environment, that is extremely easy to build.
+  - Very portable and can be easily shared for testing, troubleshooting, demos, etc.
+  - Can be used as a base for CI/CD pipelines and any other cases where containers can be used.
+
+> **Hint:** If someone is showing you a weird Ansible error - ship a container first. You can buy me a coffee and tell how many hours you saved next time we meet. :coffee:
 
 ---
 
