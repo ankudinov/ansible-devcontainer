@@ -103,7 +103,7 @@ footer: '![h:20](https://www.arista.com/assets/images/logo/Arista_Logo.png)'
 
 # Highlights
 
-<style scoped>section {font-size: 22px;}</style>
+<style scoped>section {font-size: 20px;}</style>
 
 ![bg right](img/pexels-pixabay-356043.jpg)
 
@@ -111,6 +111,8 @@ footer: '![h:20](https://www.arista.com/assets/images/logo/Arista_Logo.png)'
 - The focus is on the **development lifecycle**. The concept of using Dev Containers can be useful for some production use cases, but so is [Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible), etc. Your mileage may vary.
 - Required technical level is **intermediate**. You should know some Ansible, VSCode, containers, Github, etc.
 - There are not too many slides. The missing details are available in the [repository](https://github.com/ankudinov/ansible-devcontainer).
+
+> **Hint:** Treat this repository as a cookbook with recipes you can use in your projects.
 
 ---
 
