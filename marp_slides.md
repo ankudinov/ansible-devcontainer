@@ -167,8 +167,7 @@ Tool | Purpose
 
 <style scoped>section {font-size: 20px;}</style>
 
-![bg right vertical w:400 drop-shadow:0,5px,10px,rgba(0,0,0,.4)](img/pexels-tara-winstead-8386732-modified-stackoverflow.jpg)
-![bg right vertical w:400 contrast:80% drop-shadow:0,5px,10px,rgba(0,0,0,.4)](img/01-primary-blue-docker-logo.png)
+![bg right fit drop-shadow:0,5px,10px,rgba(0,0,0,.4)](img/pexels-tara-winstead-8386732-modified-stackoverflow.jpg)
 
 - The old story of "it works on my machine":
   - Different versions of Python and Ansible
@@ -187,6 +186,7 @@ Tool | Purpose
 
 <style scoped>section {font-size: 18px;}</style>
 
+![bg right vertical w:400 contrast:80% drop-shadow:0,5px,10px,rgba(0,0,0,.4)](img/01-primary-blue-docker-logo.png)
 ![bg right fit drop-shadow:0,5px,10px,rgba(0,0,0,.4) opacity:85%](img/docker-run-light.png)
 
 - Containers can help. But bring new challenges and building a good container is a journey:
@@ -225,8 +225,13 @@ Tool | Purpose
 
 ![bg right fit drop-shadow:0,5px,10px,rgba(0,0,0,.4) opacity:85%](img/prebuilt-action-light.png)
 
-- Building a dev container locally may not be optimal and increases the risk of changing dependencies.
-- You can pre-built your own dev container and upload to any container registry.
+- Local dev container builds are not always optimal:
+  - They can be slow
+  - Dependencies can change
+  - Expertise required to troubleshoot a failed container build is not always available
+  - Security restrictions can break local builds
+  - ... 20 other reasons nobody was thinking about
+- Solution: pre-build your own dev container and upload to any container registry.
 - One of the best combos:
   - [Github Container Registry](https://github.blog/2020-09-01-introducing-github-container-registry/)
   - [devcontainers/ci@v0.3](https://github.com/devcontainers/ci) action
