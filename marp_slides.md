@@ -80,7 +80,8 @@ footer: '![h:20](https://www.arista.com/assets/images/logo/Arista_Logo.png)'
   - Arista Systems Engineering at Arista Networks
   - Networking around since 2016
   - ACE: L5, CCIE 57751
-  - R&S, DC, Python, Ansible, Terraform, DevNet
+  - Having fun with network and automation in campus, DC and everywhere else
+  - Some Python, Ansible, Terraform, NetDevOps, etc
 
 ![bg right vertical w:200](img/pa-photo.jpg)
 ![bg right w:200](img/patrick-photo.jpg)
