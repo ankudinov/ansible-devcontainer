@@ -14,7 +14,8 @@
                 "span",
                 "style",
                 "br",
-                "sup"
+                "sup",
+                "mark"
             ]
         }
     },

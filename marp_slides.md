@@ -270,6 +270,27 @@ Tool | Purpose
 
 ---
 
+# The Repository Structure
+
+<style scoped>section {font-size: 18px;}</style>
+
+![bg right fit drop-shadow:0,5px,10px,rgba(0,0,0,.4)](drawio/repository_structure.png)
+
+1. <mark>The devcontainer used to deploy the lab environment</mark>: Ansible, all collections, Containerlab and cEOS images. Container must be re-build every time due to legal cEOS download restrictions.</mark>
+2. <mark>Github Actions Workflows used to build base container and slides.
+3. Some VSCode settings required to build slides, etc.
+4. <mark>Base devcontainer</mark>: Ansible, all collections, Containerlab. Prebuilt as package and available via Github Container Registry.
+5. Ansible inventory
+6. Code snippets to be processed by [carbon.now.sh](https://carbon.now.sh/)
+7. Containerlab topology
+8. Images as well as drawio, excalidraw, tldraw source files
+9. Makefile shortcuts
+10. Slides
+
+> We'll take a closer look at the highlights.
+
+---
+
 # The Demo
 
 <style scoped>section {font-size: 24px;}</style>
