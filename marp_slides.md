@@ -56,6 +56,12 @@ Patrick Mathy
 
 ![bg right fit](img/avd-logo.webp)
 
+<style scoped>footer {font-size: 25px; color: red; opacity: 0.6; text-shadow: 2px 2px rgba(0,0,0,.4);}</style>
+<!-- Add footer starting from this slide -->
+<!--
+footer: 'Ansible Community Day, Berlin'
+-->
+
 ---
 
 # $ whoami
