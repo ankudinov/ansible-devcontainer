@@ -25,10 +25,10 @@ all:
                       ansible_host: 192.168.0.13
         AVD_TENANTS_NETWORKS:
           children:
-            ATD_LEAFS:
+            AVD_LEAFS:
         AVD_SERVERS:
           children:
-            ATD_LEAFS:
+            AVD_LEAFS:
 
   vars:
     ansible_user: arista
