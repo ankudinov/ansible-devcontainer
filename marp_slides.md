@@ -315,3 +315,7 @@ Tool | Purpose
 ![bg left opacity:80%](img/pexels-ann-h-7186206.jpg)
 
 # Q&A
+
+---
+
+![bg fit](img/qr-code.png)
