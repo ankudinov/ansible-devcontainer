@@ -310,12 +310,11 @@ Tool | Purpose
 
 ---
 
-<style scoped>section {font-size: 60px;}</style>
+<style scoped>section {font-size: 45px;}</style>
 
 ![bg left opacity:80%](img/pexels-ann-h-7186206.jpg)
 
 # Q&A
 
----
-
-![bg fit](img/qr-code.png)
+- [forum.ansible.com](https://forum.ansible.com/)
+- [in/petr-ankudinov](https://www.linkedin.com/in/petr-ankudinov/)
